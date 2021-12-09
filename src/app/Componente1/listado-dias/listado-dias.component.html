@@ -1,0 +1,8 @@
+<p>listado-dias works!</p>
+<h1>Dias</h1>
+<ul>
+  <li *ngFor="let dia of dias; let i=index">{{i+1}}-{{dia}}</li>
+
+</ul>
+<p>lo que hemos borardoes:{{BorarDias}}</p>
+<button (click)="borrarDias()">Borrar</button>

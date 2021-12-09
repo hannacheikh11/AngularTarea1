@@ -1,0 +1,8 @@
+<p>listado works!</p>
+<h1>Meses</h1>
+<ul>
+  <li *ngFor="let mese of meses; let i=index">{{i+1}}-{{mese}}</li>
+
+</ul>
+<p>lo que hemos borardoes:{{BorarMes}}</p>
+<button (click)="borrarElemneto()">Borrar</button>

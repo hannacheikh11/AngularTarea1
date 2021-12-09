@@ -1,0 +1,9 @@
+<p>listado-comida works!</p>
+<p>listado-flores works!</p>
+<h1>Comida</h1>
+<ul>
+  <li *ngFor="let com of comida; let i=index">{{i+1}}-{{com}}</li>
+
+</ul>
+<p>lo que hemos borado toda la lista</p>
+<button (click)="borrarComida()">Borrar</button>

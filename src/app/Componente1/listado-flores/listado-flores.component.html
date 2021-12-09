@@ -1,0 +1,8 @@
+<p>listado-flores works!</p>
+<h1>Flores</h1>
+<ul>
+  <li *ngFor="let flor of flores; let i=index">{{i+1}}-{{flor}}</li>
+
+</ul>
+<p>lo que hemos borado toda la lista</p>
+<button (click)="borrarflor()">Borrar</button>
