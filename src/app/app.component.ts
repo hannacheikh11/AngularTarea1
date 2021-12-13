@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ListadoComponent } from './Componente1/listado/listado.component';
+import { Service } from './service/ser.service';
+
+
 
 @Component({
   selector: 'app-root',
@@ -13,8 +17,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  //@Input() meses:string[]=[];
 
+  borrar:boolean=true;
+  constructor(private service:Service){
 
+  }
 
-
+get borrarElemneto(){
+  return this.service.meses;
+}
 }

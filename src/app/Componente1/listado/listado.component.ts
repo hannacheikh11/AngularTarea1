@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Service } from 'src/app/service/ser.service';
 
 @Component({
   selector: 'app-listado',
@@ -6,15 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listado.component.css']
 
 })
-export class ListadoComponent  {
+export class ListadoComponent   {
 
-  meses:string[]=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"];
-  BorarMes:string|undefined="";
-  borrarElemneto(){
+ // meses:string[]=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto"];
 
-   this.BorarMes=this.meses.pop();
+ constructor(private service:Service){
+
+ }
+ meses:string[]=this.service.meses;
+ //BorarMes:string|undefined="";
+ get borrarElemneto(){
+
+   return this.service.meses.pop();
 
   }
+
 
 
 }

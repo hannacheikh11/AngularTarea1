@@ -1,7 +1,9 @@
 <app-listado></app-listado>
-<app-listado-dias></app-listado-dias>
+
 <app-listado-flores></app-listado-flores>
 <app-listado-comida></app-listado-comida>
 <app-listado-cuidades></app-listado-cuidades>
+<button (click)="borrar=!borrar">cerar</button>
+<app-listado-dias *ngIf="borrar"></app-listado-dias>
 
 

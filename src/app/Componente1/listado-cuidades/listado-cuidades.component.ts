@@ -8,16 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class ListadoCuidadesComponent  {
 
 
-  ciudades:string[] = [];
+  city:string[] = [];
   ciudadBorrada: any = "";
   ciudadesBorradas:string[] = [];
 
   mostrarLista() {
-   this.ciudades = ["Vigo", "Malaga", "Cortoba", "Valencia", "Huelva", "Saragoza"];
+   this.city = ["Vigo", "Malaga", "Cortoba", "Valencia", "Huelva", "Saragoza"];
   }
 
   borrar() {
-    this.ciudadBorrada = this.ciudades.pop();
+    this.ciudadBorrada = this.city.pop();
     this.ciudadesBorradas.push(this.ciudadBorrada);
   }
 
